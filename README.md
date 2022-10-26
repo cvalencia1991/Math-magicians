@@ -9,11 +9,10 @@ In this Project we create  a applicaction using React
 if you want this project, follow the next intruccions:
 To get a local copy up and running follow these simple example steps.
 
- - Go to the code the repository To Do List
- - Use Git to clone the repository on the site you want to put
+ - Go to the code the repository Math Magicians
+ - Clone the repository https://github.com/cvalencia1991/Math-magicians/tree/main
  - Install the next npm items in the file to run it
     - `npm run start`
-
  - To run it press the next item `npm run test`
  - Enjoy :)
 
