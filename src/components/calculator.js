@@ -9,11 +9,7 @@ export default class Calculator extends React.Component {
   }
 
   valbutton(e) {
-  /*   console.log(this.state) */
     this.setState((state) => calculate(state, e.target.textContent));
-    /*  const buttonvalue = e.target.textContent;
-    const test = calculate(this.state, buttonvalue);
-    console.log(test); */
   }
 
   render() {
