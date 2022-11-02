@@ -15,7 +15,8 @@ To get a local copy up and running follow these simple example steps.
  - To run testing press in the terminal `npm run test`
  - Enjoy :)
 
-# [see live demo](Still working on it)
+# see live demo
+[live demo](https://cvalencia1991.github.io/Math-magicians/)
 
 ## Built With
 
