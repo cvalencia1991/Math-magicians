@@ -2,7 +2,7 @@
 
 # Math Magicas
 
-In this Project we create  a applicaction using React 
+In this Project we create  a applicaction using React, also implementing the feature of diferentes routes
 
 ## Getting Started
 
