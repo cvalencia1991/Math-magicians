@@ -1,48 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
+import calculate from '../logic/calculate';
 
-export default class Calculator extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+export default function Calculator() {
+  const [state, caloperator] = useState({ total: 0, next: null, operation: null });
 
-  render() {
-    return (
-      <div>
-        <span className="styleoutput">0</span>
-        <div className="stylebuttoms">
-          <div className="styleCalculator">
-            <button type="button">AC</button>
-            <button type="button">7</button>
-            <button type="button">4</button>
-            <button type="button">1</button>
-          </div>
-          <div className="styleCalculator">
-            <button type="button">+/-</button>
-            <button type="button">8</button>
-            <button type="button">5</button>
-            <button type="button">2</button>
-          </div>
-          <div className="styleCalculator">
-            <button type="button">%</button>
-            <button type="button">9</button>
-            <button type="button">6</button>
-            <button type="button">3</button>
-          </div>
-          <div className="styleCalculator">
-            <button className="buttonfunction" type="button">÷</button>
-            <button className="buttonfunction" type="button">*</button>
-            <button className="buttonfunction" type="button">-</button>
-            <button className="buttonfunction" type="button">+</button>
-
-          </div>
+  const valbutton = (e) => {
+    caloperator((state) => calculate(state, e.target.textContent));
+  };
+  const { total, next, operation } = state;
+  return (
+    <>
+      <span className="styleoutput">
+        {total}
+        {operation}
+        {next}
+      </span>
+      <div className="stylebuttoms">
+        <div className="styleCalculator">
+          <button type="button" onClick={valbutton}>AC</button>
+          <button type="button" onClick={valbutton}>7</button>
+          <button type="button" onClick={valbutton}>4</button>
+          <button type="button" onClick={valbutton}>1</button>
         </div>
-        <div className="stylebottomcalculator">
-          <button className="buttonZero" type="button">0</button>
-          <button type="button">.</button>
-          <button className="buttonfunction" type="button">=</button>
+        <div className="styleCalculator">
+          <button type="button" onClick={valbutton}>+/-</button>
+          <button type="button" onClick={valbutton}>8</button>
+          <button type="button" onClick={valbutton}>5</button>
+          <button type="button" onClick={valbutton}>2</button>
+        </div>
+        <div className="styleCalculator">
+          <button type="button" onClick={valbutton}>%</button>
+          <button type="button" onClick={valbutton}>9</button>
+          <button type="button" onClick={valbutton}>6</button>
+          <button type="button" onClick={valbutton}>3</button>
+        </div>
+        <div className="styleCalculator">
+          <button className="buttonfunction" type="button" onClick={valbutton}>÷</button>
+          <button className="buttonfunction" type="button" onClick={valbutton}>*</button>
+          <button className="buttonfunction" type="button" onClick={valbutton}>-</button>
+          <button className="buttonfunction" type="button" onClick={valbutton}>+</button>
         </div>
       </div>
-    );
-  }
+      <div className="stylebottomcalculator">
+        <button className="buttonZero" type="button" onClick={valbutton}>0</button>
+        <button type="button" onClick={valbutton}>.</button>
+        <button className="buttonfunction" type="button" onClick={valbutton}>=</button>
+      </div>
+    </>
+  );
 }

@@ -2,22 +2,21 @@
 
 # Math Magicas
 
-In this Project we create  a applicaction using React 
+In this Project we create  a applicaction using React, also implementing the feature of diferentes routes
 
 ## Getting Started
 
 if you want this project, follow the next intruccions:
 To get a local copy up and running follow these simple example steps.
 
- - Go to the code the repository To Do List
- - Use Git to clone the repository on the site you want to put
- - Install the next npm items in the file to run it
-    - `npm run start`
-
- - To run it press the next item `npm run test`
+ - Go to the code the repository Math Magicians
+ - Clone the repository https://github.com/cvalencia1991/Math-magicians/tree/main
+ - Install `npm install` the next npm items in the file to run it with `npm run start`
+ - To run testing press in the terminal `npm run test`
  - Enjoy :)
 
-# [see live demo](Still working on it)
+# see live demo
+[live demo](https://cvalencia1991.github.io/Math-magicians/)
 
 ## Built With
 
