@@ -24,8 +24,10 @@
 .quotestyle {
   position: absolute;
   top: 30%;
+  left: 10%;
   font-size: xx-large;
   text-align: center;
+  width: 73%;
 }
 
 .Tittle {
