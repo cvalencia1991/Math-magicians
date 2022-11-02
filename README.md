@@ -18,6 +18,8 @@ To get a local copy up and running follow these simple example steps.
 # see live demo
 [live demo](https://cvalencia1991.github.io/Math-magicians/)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/aa283b2c-9c42-4ef3-95ec-9d17ce2a45b3/deploy-status)](https://app.netlify.com/sites/math-magicias/deploys)
+
 ## Built With
 
 - Languages React.
