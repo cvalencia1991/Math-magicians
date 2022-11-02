@@ -1,13 +1,28 @@
+*{
+  font-family: cursive;
+}
 
+.navBar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.menuNav{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  gap: 1em;
+  align-items: center;
+}
+
+.Tittle{
+  font-size: xxx-large;
+}
 .styleCalculator {
   display: flex;
   flex-direction: column;
-}
-
-.App {
-  position: absolute;
-  left: 30%;
-  top: 30%;
 }
 
 .styleoutput {

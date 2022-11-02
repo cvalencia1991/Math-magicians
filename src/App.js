@@ -1,12 +1,15 @@
 import './App.css';
 import React from 'react';
-import Calculator from './components/calculator';
+import { Routes } from 'react-router-dom';
+import Home from './Pages/Home';
+import Navbar from './Navbar';
+import Quote from './Pages/quote';
 
 function App() {
   return (
-    <div className="App">
-      <Calculator />
-    </div>
+    <>
+      <Navbar />
+    </>
   );
 }
 
