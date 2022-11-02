@@ -1,15 +1,14 @@
-*{
+* {
   font-family: cursive;
 }
 
-.navBar{
+.navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-
-.menuNav{
+.menuNav {
   display: flex;
   list-style: none;
   padding: 0;
@@ -17,9 +16,22 @@
   align-items: center;
 }
 
-.Tittle{
+.infolorem {
+  font-size: xx-large;
+  margin: 10px;
+}
+
+.quotestyle {
+  position: absolute;
+  top: 30%;
+  font-size: xx-large;
+  text-align: center;
+}
+
+.Tittle {
   font-size: xxx-large;
 }
+
 .styleCalculator {
   display: flex;
   flex-direction: column;
@@ -32,6 +44,7 @@
   color: white;
   height: 3em;
   align-items: center;
+  width: 19.2em;
 }
 
 .stylebuttoms {
@@ -56,5 +69,10 @@ button {
 }
 
 .buttonZero {
-  width: 50%;
+  width: 153.5px;
+}
+
+.positionCal {
+  position: absolute;
+  left: 60%;
 }
