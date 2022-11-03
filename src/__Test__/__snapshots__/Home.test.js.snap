@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Home renders correctly 1`] = `
+<div>
+  <h2>
+    Welcome to our page!
+  </h2>
+  <div
+    className="infolorem"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aliquid quae amet quisquam voluptates magni in necessitatibus molestiae animi a. Quis velit quia facere accusantium sed animi, nobis explicabo ratione!
+  </div>
+  <div
+    className="infolorem"
+  >
+    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis aliquid quae amet quisquam voluptates magni in necessitatibus molestiae animi a. Quis velit quia facere accusantium sed animi, nobis explicabo ratione!
+  </div>
+</div>
+`;
