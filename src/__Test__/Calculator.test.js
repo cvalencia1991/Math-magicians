@@ -18,5 +18,4 @@ describe('Testing Calculator component', () => {
 
     expect(display.textContent).toBe('3');
   });
-
 });
