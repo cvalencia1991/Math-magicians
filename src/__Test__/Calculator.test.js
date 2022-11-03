@@ -3,28 +3,20 @@ import { render, fireEvent, screen } from '@testing-library/react';
 import Calculator from '../components/Calculator';
 
 describe('Testing Calculator component', () => {
-  test('renders correctly', () => {
+  test('sum works correctly', () => {
     render(<Calculator />);
     const display = document.querySelector('.styleoutput');
-    const btn = screen.getByText('1');
-    fireEvent.click(btn);
-    expect(display.textContent).toBe('1');
+    const key1 = screen.getByText('1');
+    const key2 = screen.getByText('+');
+    const key3 = screen.getByText('2');
+    const key4 = screen.getByText('=');
 
-    // render(<Calculator />);
-    // const resultNumber = document.querySelector('.styleoutput');
-    // const key5 = screen.getByText('5');
-    // const key4 = screen.getByText('4');
-    // fireEvent.click(key5);
-    // fireEvent.click(key4);
-    // expect(resultNumber.textContent).toBe('54');
+    fireEvent.click(key1);
+    fireEvent.click(key2);
+    fireEvent.click(key3);
+    fireEvent.click(key4);
+
+    expect(display.textContent).toBe('3');
   });
 
 });
-
-// render(<Calculator />);
-// const resultNumber = document.querySelector('.styleoutput');
-// const key5 = screen.getByText('5');
-// const key4 = screen.getByText('4');
-// fireEvent.click(key5);
-// fireEvent.click(key4);
-// expect(resultNumber.textContent).toBe('54');
