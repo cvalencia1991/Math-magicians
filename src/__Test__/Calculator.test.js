@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, fireEvent, screen } from '@testing-library/react';
-import Calculator from '../components/Calculator';
+import Calculator from '../components/calculator';
 
 describe('Testing Calculator component', () => {
   test('sum works correctly', () => {
