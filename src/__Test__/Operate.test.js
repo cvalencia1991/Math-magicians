@@ -60,13 +60,9 @@ describe('Operate Component', () => {
   });
   describe('testing +/- button', () => {
     test('testing = with two numbers  ', () => {
-      const buttonName = '=';
-      const obj = { total: '7', next: '2', operation: '+' };
-      const result = {
-        total: '9',
-        next: null,
-        operation: null,
-      };
+      const buttonName = '+/-';
+      const obj = { total: null, next: '9' };
+      const result = { next: '-9', total: null };
       expect(calculate(obj, buttonName)).toStrictEqual(result);
     });
   });
