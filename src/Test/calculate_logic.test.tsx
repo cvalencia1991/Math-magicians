@@ -1,11 +1,11 @@
-import calculate from '../logic/calculate';
+import calculate from '../lib/calculate';
 
-describe('Operate Component', () => {
+describe('Calculate Logic', () => {
   test('button AC pressed', () => {
     const Buttonname = 'AC';
     const obj = {
-      total: 10,
-      next: 1,
+      total: '10',
+      next: '1',
       operation: '+',
     };
     const result = {
@@ -16,10 +16,24 @@ describe('Operate Component', () => {
     expect(calculate(obj, Buttonname)).toStrictEqual(result);
   });
 
+  test('User pressed an operation after pressing "="', () => {
+    const obj = { total: '10', next: null, operation: null };
+    const buttonName = '+';
+    const result = { total: '10', next: null, operation: '+' };
+    expect(calculate(obj, buttonName)).toStrictEqual(result);
+  });
+
+  test('User pressed dot when total exists', () => {
+    const obj = { total: '10', next: null, operation: null };
+    const buttonName = '.';
+    const result = { total: null, next: '10.', operation: null };
+    expect(calculate(obj, buttonName)).toStrictEqual(result);
+  });
+
   describe('testing zero Button', () => {
     test('testing zero button  ', () => {
       const buttonName = '0';
-      const obj = { total: 0, next: null, operation: null };
+      const obj = { total: '0', next: null, operation: null };
       const result = { next: '0', total: null };
       expect(calculate(obj, buttonName)).toStrictEqual(result);
     });
@@ -58,8 +72,9 @@ describe('Operate Component', () => {
       expect(calculate(obj, buttonName)).toStrictEqual(result);
     });
   });
+
   describe('testing +/- button', () => {
-    test('testing = with two numbers  ', () => {
+    test('testing +/- with a number', () => {
       const buttonName = '+/-';
       const obj = { total: null, next: '9' };
       const result = { next: '-9', total: null };

@@ -1,6 +1,18 @@
 import Big from 'big.js';
 
-export default function operate(numberOne, numberTwo, operation) {
+export default function operate(
+  numberOne: string | number | Big | null | undefined,
+  numberTwo: string | number | Big | null | undefined,
+  operation: string,
+) {
+  if (
+    numberOne === null
+    || numberOne === undefined
+    || numberTwo === null
+    || numberTwo === undefined
+  ) {
+    return '0';
+  }
   const one = Big(numberOne);
   const two = Big(numberTwo);
   if (operation === '+') {

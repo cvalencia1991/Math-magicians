@@ -5,7 +5,7 @@ import Calculator from '../components/calculator';
 describe('Testing Calculator component', () => {
   test('sum works correctly', () => {
     render(<Calculator />);
-    const display = document.querySelector('.styleoutput');
+    const display = document.querySelector('.main-display');
     const key1 = screen.getByText('1');
     const key2 = screen.getByText('+');
     const key3 = screen.getByText('2');
@@ -16,6 +16,6 @@ describe('Testing Calculator component', () => {
     fireEvent.click(key3);
     fireEvent.click(key4);
 
-    expect(display.textContent).toBe('3');
+    expect(display?.textContent).toBe('3');
   });
 });

@@ -1,11 +1,11 @@
 import '@testing-library/jest-dom';
 import renderer from 'react-test-renderer';
-import Quote from '../Pages/quote';
+import Calculatorscren from '../Pages/CalculatorPage';
 
-describe('Testing Quote', () => {
+describe('Testing Calculator page', () => {
   test('renders correctly', () => {
     const tree = renderer
-      .create(<Quote />)
+      .create(<Calculatorscren />)
       .toJSON();
     expect(tree).toMatchSnapshot();
   });

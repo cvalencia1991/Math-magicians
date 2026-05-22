@@ -1,19 +1,13 @@
 import operate from './operate';
 
-function isNumber(item) {
+function isNumber(item: string) {
   return !!item.match(/[0-9]+/);
 }
 
-/**
- * Given a button name and a calculator data object, return an updated
- * calculator data object.
- *
- * Calculator data object contains:
- *   total:s      the running total
- *   next:String       the next number to be operated on with the total
- *   operation:String  +, -, etc.
- */
-export default function calculate(obj, buttonName) {
+export default function calculate(
+  obj: { total?: string | null; next?: string | null; operation?: string | null },
+  buttonName: string,
+) {
   if (buttonName === 'AC') {
     return {
       total: null,
@@ -60,7 +54,11 @@ export default function calculate(obj, buttonName) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { ...obj, next: `${obj.total}.` };
+      return {
+        total: null,
+        next: `${obj.total}.`,
+        operation: null,
+      };
     }
     return { ...obj, next: '0.' };
   }
@@ -73,7 +71,6 @@ export default function calculate(obj, buttonName) {
         operation: null,
       };
     }
-    // '=' with no operation, nothing to do
     return {};
   }
 

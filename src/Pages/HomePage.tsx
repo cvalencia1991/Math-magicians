@@ -1,0 +1,26 @@
+import React from 'react';
+
+const HomePage = () : JSX.Element => (
+  <div className="page-container home-page">
+    <h2>Welcome to the World of Math Magicians!</h2>
+    <p>
+      Math Magicians is a single-page application (SPA) designed for fans of mathematics.
+      It is more than just a simple tool; it is a space where logic meets clean design,
+      providing a seamless experience for performing everyday calculations while being
+      inspired by the wisdom of great mathematical minds.
+    </p>
+    <p>
+      Our application focuses on simplicity and efficiency. Whether you are a student
+      checking your homework, a professional performing quick arithmetic, or simply
+      someone who appreciates the beauty of numbers, Math Magicians offers a
+      minimalist interface that stays out of your way and lets you focus on what
+      matters most: the math.
+    </p>
+    <p>
+      Explore our interactive calculator, discover inspiring quotes from famous
+      mathematicians, and enjoy a clutter-free environment built with the latest
+      web technologies like React and TypeScript.
+    </p>
+  </div>
+);
+export default HomePage;
