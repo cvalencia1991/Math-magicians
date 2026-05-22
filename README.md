@@ -1,36 +1,83 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+# 🧙‍♂️ Math Magicians
 
-# Math Magicas
+**Math Magicians** is a single-page application (SPA) built with **React** and **TypeScript**. It allows users to perform simple calculations and read inspiring mathematical quotes. This project showcases the implementation of React components, hooks, routing, and comprehensive unit testing.
 
-In this Project we create  a applicaction using React, also implementing the feature of diferentes routes
+![Screenshot](./src/Test/__snapshots__/CalculatorScreen.test.tsx.snap) <!-- Note: This is just a placeholder reference, usually you'd have a real image here -->
 
-## Getting Started
+## 🚀 Live Demo
 
-if you want this project, follow the next intruccions:
-To get a local copy up and running follow these simple example steps.
+[Live Demo Link](https://math-magicias.netlify.app/)
 
- - Go to the code the repository Math Magicians
- - Clone the repository https://github.com/cvalencia1991/Math-magicians/tree/main
- - Install `npm install` the next npm items in the file to run it with `npm run start`
- - To run testing press in the terminal `npm run test`
- - Enjoy :)
+## 🛠 Built With
 
-# Status
+- **React** (v18+)
+- **TypeScript**
+- **React Router** (v6)
+- **Big.js** (for high-precision arithmetic)
+- **Jest & React Testing Library** (Unit & Integration testing)
+- **CSS3** (Custom minimalist design & Grid)
+- **ESLint & Stylelint** (Code quality)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/aa283b2c-9c42-4ef3-95ec-9d17ce2a45b3/deploy-status)](https://app.netlify.com/sites/math-magicias/deploys)
+## 📖 Key Features
 
-## Built With
+- **Full Calculator**: Standard arithmetic operations (Addition, Subtraction, Multiplication, Division, Modulo).
+- **Modern UI**: Minimalist, clean, and fully responsive design (Mobile-First).
+- **SPA Routing**: Seamless navigation between Home, Calculator, and Quote pages.
+- **Robust Testing**: 25 unit and integration tests ensuring core logic and UI integrity.
 
-- Languages React.
-- Technologies used Github, Git, VSCode,Jest
+## 💻 Getting Started
 
-## Authors
+### Prerequisites
 
-👤 **Cesar Alberto Valencia Aguilar**
+- Node.js (v14+)
+- npm
 
-- GitHub: [https://github.com/cvalencia1991](cesar valencia)
-- Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
-- LinkedIn: [https://www.linkedin.com/in/cvalenciaguilar/](cesarvalencia)
+### Setup
+
+Clone the repository to your local machine:
+
+```bash
+git clone https://github.com/cvalencia1991/Math-magicians.git
+cd Math-magicians
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Usage
+
+To run the project in development mode:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+### Run tests
+
+```bash
+npm test
+```
+
+### Deployment
+
+The project is configured for easy deployment to Netlify or GitHub Pages.
+
+```bash
+npm run build
+```
+
+## 👤 Author
+
+**Cesar Alberto Valencia Aguilar**
+
+- GitHub: [@cvalencia1991](https://github.com/cvalencia1991)
+- Twitter: [@cvalenciaguilar](https://twitter.com/cvalenciaguilar)
+- LinkedIn: [Cesar Valencia](https://www.linkedin.com/in/cvalenciaguilar/)
 
 ## 🤝 Contributing
 
@@ -41,7 +88,6 @@ Feel free to check the [issues page](https://github.com/cvalencia1991/Math-magic
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
 
 ## 📝 License
 
