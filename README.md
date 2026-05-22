@@ -15,10 +15,7 @@ To get a local copy up and running follow these simple example steps.
  - To run testing press in the terminal `npm run test`
  - Enjoy :)
 
-# see live demo
-[live demo](https://cvalencia1991.github.io/Math-magicians/)
-
-[live demo netfily](https://dev--math-magicias.netlify.app/)
+# Status
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/aa283b2c-9c42-4ef3-95ec-9d17ce2a45b3/deploy-status)](https://app.netlify.com/sites/math-magicias/deploys)
 
@@ -31,9 +28,9 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Cesar Alberto Valencia Aguilar**
 
-- GitHub: [https://github.com/cvalencia1991](https://github.com/cvalencia1991)
+- GitHub: [https://github.com/cvalencia1991](cesar valencia)
 - Twitter: [https://twitter.com/cvalenciaguilar](@cvalenciaguilar)
-- LinkedIn: [https://www.linkedin.com/in/cvalenciaguilar/](www.linkedin.com/in/cvalenciaguilar)
+- LinkedIn: [https://www.linkedin.com/in/cvalenciaguilar/](cesarvalencia)
 
 ## 🤝 Contributing
 
