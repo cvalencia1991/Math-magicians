@@ -2,7 +2,6 @@
 
 **Math Magicians** is a single-page application (SPA) built with **React** and **TypeScript**. It allows users to perform simple calculations and read inspiring mathematical quotes. This project showcases the implementation of React components, hooks, routing, and comprehensive unit testing.
 
-![Screenshot](./src/Test/__snapshots__/CalculatorScreen.test.tsx.snap) <!-- Note: This is just a placeholder reference, usually you'd have a real image here -->
 
 ## 🚀 Live Demo
 
